@@ -13,9 +13,11 @@
 .hero__blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(24px);
+  opacity: 0.85;
   pointer-events: none;
-  animation: floatY 8s ease-in-out infinite;
+  animation: floatY 10s ease-in-out infinite;
+  will-change: transform;
 }
 
 .hero__blob--teal {
@@ -146,6 +148,7 @@
   justify-content: center;
   animation: floatY 7s ease-in-out infinite;
   animation-delay: -2s;
+  transform: translateZ(0);
 }
 
 .hero__image-card {
@@ -239,4 +242,15 @@
 @media (max-width: 480px) {
   .hero__float--bottom { display: none; }
   .hero__trust { gap: var(--space-4); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__blob,
+  .hero__image-wrap,
+  .hero__float,
+  .hero__scroll-dot,
+  .animate-fade-up {
+    animation: none !important;
+    transition: none !important;
+  }
 }

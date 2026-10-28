@@ -71,15 +71,23 @@ const Hero = () => {
         {/* Right Image */}
         <div className="hero__image-wrap animate-fade-up animate-fade-up-delay-2">
           <div className="hero__image-card">
-            <img
-              src="/hero.png"
-              alt="Kỹ thuật viên TechCare+ hướng dẫn người lớn tuổi sử dụng điện thoại, máy tính bảng và Smart TV tại nhà"
-              className="hero__image"
-              loading="eager"
-              fetchPriority="high"
-              width={640}
-              height={640}
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/hero-optimized.webp"
+                sizes="(max-width: 900px) 85vw, 42vw"
+              />
+              <img
+                src="/hero.png"
+                alt="Kỹ thuật viên TechCare+ hướng dẫn người lớn tuổi sử dụng điện thoại, máy tính bảng và Smart TV tại nhà"
+                className="hero__image"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width={900}
+                height={900}
+              />
+            </picture>
 
             {/* Floating badges */}
             <div className="hero__float hero__float--top" aria-hidden="true">
