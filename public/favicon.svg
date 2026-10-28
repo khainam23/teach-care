@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TechCare+ favicon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+
+  <g transform="translate(0 2)">
+    <rect x="34" y="18" width="60" height="88" rx="14" fill="#ffffff" opacity="0.96"/>
+    <rect x="41" y="28" width="46" height="58" rx="9" fill="#e6fffb"/>
+    <circle cx="64" cy="94" r="5" fill="#0f766e" opacity="0.9"/>
+
+    <path d="M56 36h16v10H56zm-9 26h34v8H47zm0 14h22v8H47z" fill="#0f766e" opacity="0.9"/>
+
+    <g>
+      <circle cx="92" cy="32" r="16" fill="url(#accent)"/>
+      <path d="M92 24c-2.2 0-4 1.8-4 4 0 3 2.1 5.2 4.7 7.4 2.7-2.2 4.6-4.4 4.6-7.4 0-2.2-1.8-4-4.3-4zm0 8.5c-1.5-1.3-2.9-2.7-3.1-4.2-.2-1.6 1-3.3 3.1-3.3 2.1 0 3.5 1.8 3.5 3.3 0 1.8-1.6 3.2-3.5 4.2z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

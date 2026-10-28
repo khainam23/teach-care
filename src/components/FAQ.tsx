@@ -28,50 +28,69 @@ const faqs = [
   },
 ];
 
+const faqStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.a,
+    },
+  })),
+};
+
 const FAQ = () => {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="faq" id="faq" aria-labelledby="faq-title">
-      <div className="container">
-        <div className="faq__header">
-          <div className="section-label">❓ Câu hỏi thường gặp</div>
-          <h2 className="section-title" id="faq-title">
-            Bạn có thắc mắc?<br />Chúng tôi có <span>câu trả lời</span>
-          </h2>
-        </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
+      <section className="faq" id="faq" aria-labelledby="faq-title">
+        <div className="container">
+          <div className="faq__header">
+            <div className="section-label">❓ Câu hỏi thường gặp</div>
+            <h2 className="section-title" id="faq-title">
+              Bạn có thắc mắc?<br />Chúng tôi có <span>câu trả lời</span>
+            </h2>
+          </div>
 
-        <div className="faq__list" role="list">
-          {faqs.map((faq, i) => (
-            <div
-              key={i}
-              className={`faq__item ${open === i ? 'faq__item--open' : ''}`}
-              role="listitem"
-            >
-              <button
-                className="faq__question"
-                onClick={() => setOpen(open === i ? null : i)}
-                aria-expanded={open === i}
-                id={`faq-q-${i}`}
-                aria-controls={`faq-a-${i}`}
-              >
-                <span>{faq.q}</span>
-                <span className="faq__icon" aria-hidden="true">{open === i ? '−' : '+'}</span>
-              </button>
+          <div className="faq__list" role="list">
+            {faqs.map((faq, i) => (
               <div
-                className="faq__answer"
-                id={`faq-a-${i}`}
-                role="region"
-                aria-labelledby={`faq-q-${i}`}
-                hidden={open !== i}
+                key={i}
+                className={`faq__item ${open === i ? 'faq__item--open' : ''}`}
+                role="listitem"
               >
-                <p>{faq.a}</p>
+                <button
+                  className="faq__question"
+                  onClick={() => setOpen(open === i ? null : i)}
+                  aria-expanded={open === i}
+                  id={`faq-q-${i}`}
+                  aria-controls={`faq-a-${i}`}
+                >
+                  <span>{faq.q}</span>
+                  <span className="faq__icon" aria-hidden="true">{open === i ? '−' : '+'}</span>
+                </button>
+                <div
+                  className="faq__answer"
+                  id={`faq-a-${i}`}
+                  role="region"
+                  aria-labelledby={`faq-q-${i}`}
+                  hidden={open !== i}
+                >
+                  <p>{faq.a}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

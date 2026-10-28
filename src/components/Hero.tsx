@@ -73,9 +73,12 @@ const Hero = () => {
           <div className="hero__image-card">
             <img
               src="/hero.png"
-              alt="Kỹ thuật viên TechCare+ đang hướng dẫn người cao tuổi dùng thiết bị điện tử"
+              alt="Kỹ thuật viên TechCare+ hướng dẫn người lớn tuổi sử dụng điện thoại, máy tính bảng và Smart TV tại nhà"
               className="hero__image"
               loading="eager"
+              fetchPriority="high"
+              width={640}
+              height={640}
             />
 
             {/* Floating badges */}
