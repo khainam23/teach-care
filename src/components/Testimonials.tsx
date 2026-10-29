@@ -11,7 +11,7 @@ const reviews = [
   },
   {
     name: 'Ông Trần Văn Minh',
-    age: '68 tuổi — Hà Nội',
+    age: '68 tuổi — TP.HCM',
     avatar: '👴',
     stars: 5,
     text: 'Trước đây tôi sợ nhất là dùng internet banking, sợ bị mất tiền. Nhờ TechCare+ giải thích kỹ từng bước về bảo mật, giờ tôi yên tâm dùng rồi. Dịch vụ rất chuyên nghiệp.',
@@ -27,7 +27,7 @@ const reviews = [
   },
   {
     name: 'Bà Phạm Thị Thu',
-    age: '75 tuổi — Đà Nẵng',
+    age: '75 tuổi — TP.HCM',
     avatar: '👵',
     stars: 5,
     text: 'Tôi dùng app đặt lịch khám bệnh online giờ rồi, không phải nhờ con cháu nữa. Bây giờ tôi tự đặt lịch được, tự xem kết quả xét nghiệm. Cảm ơn TechCare+ nhiều lắm!',

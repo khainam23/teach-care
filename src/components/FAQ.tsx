@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: 'Tôi có thể đặt lịch học cho ba mẹ ở thành phố khác không?',
-    a: 'Hiện TechCare+ phục vụ tại TP.HCM, Hà Nội và Đà Nẵng. Chúng tôi đang mở rộng thêm các tỉnh thành. Liên hệ hotline 0337-209-580 để biết thêm thông tin về khu vực của bạn.',
+    a: 'Hiện TechCare+ phục vụ tại TP.HCM. Liên hệ hotline 0337-209-580 để xác nhận lịch hẹn và khu vực hỗ trợ phù hợp.',
   },
   {
     q: 'Nếu ông bà quên kiến thức sau buổi học thì sao?',

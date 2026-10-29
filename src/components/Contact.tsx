@@ -150,8 +150,8 @@ const Contact = () => {
               <div className="contact__channel-icon">📍</div>
               <div>
                 <strong>Phục vụ tại</strong>
-                <span>TP.HCM · Hà Nội · Đà Nẵng</span>
-                <small>Và đang mở rộng thêm</small>
+                <span>TP.HCM</span>
+                <small>Hỗ trợ tại nhà trên địa bàn thành phố</small>
               </div>
             </div>
           </div>

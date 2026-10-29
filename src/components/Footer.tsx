@@ -50,7 +50,7 @@ const Footer = () => {
           <ul>
             <li><a href="tel:0337209580">📞 0337-209-580</a></li>
             <li><a href="mailto:khainam23@gmail.com">📧 khainam23@gmail.com</a></li>
-            <li><span>📍 TP.HCM · Hà Nội · Đà Nẵng</span></li>
+            <li><span>📍 TP.HCM</span></li>
             <li><span>🕐 7:00 – 21:00, mỗi ngày</span></li>
           </ul>
         </div>

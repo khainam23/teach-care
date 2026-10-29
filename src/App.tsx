@@ -18,7 +18,7 @@ const structuredData = {
   url: 'https://techcareplus.vercel.app/',
   telephone: '+84337209580',
   email: 'khainam23@gmail.com',
-  areaServed: ['TP.HCM', 'Hà Nội', 'Đà Nẵng'],
+  areaServed: ['TP.HCM'],
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Việt Nam',
